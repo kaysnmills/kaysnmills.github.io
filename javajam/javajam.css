@@ -25,14 +25,7 @@ nav { font-weight: bold;
         padding-bottom: 5px;
 } 
 
-footer {background-color: #d2b48c;
-        font-size: .60em;
-        font-style: italic;
-        text-align: center;
-        padding: 1em;
-        border-top: solid 2px #8c3826;
 
-}
 
 #wrapper {width: 80%;
         background-color: #fefaeb;
@@ -73,10 +66,20 @@ img {
         border-style: none;
         max-width: 100%;
         height: auto;}
+        
+#homehero {
+                height: 300px;
+                background-image: url(images/hero.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+        }
 
-#homehero {height: 300px;
-        background-image: url(images/hero.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+
+footer {background-color: #d2b48c;
+        font-size: .60em;
+        font-style: italic;
+        text-align: center;
+        padding: 1em;
+        border-top: solid 2px #8c3826;
 
 }
