@@ -59,7 +59,12 @@ h1 { height: 100px;
   text-align: center;
   background:rgba(255, 255, 255, 0.80);
 }
-.space {height: 20vh; }
+
+.activeNav {
+      color: orange;
+}
+
+.space {height: 8vh; }
 #tours, #rentals, #contact {  background-color: #FFF;
                        width: 60%;
                        padding-left: 6em;
