@@ -141,6 +141,8 @@ a:focus {
 }
 
 .custom_nav-container {
+  border-style: solid;
+  border: red;
   z-index: 99999;
   padding: 0;
   -webkit-box-align: end;

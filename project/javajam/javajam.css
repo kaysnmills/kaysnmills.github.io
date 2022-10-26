@@ -1,0 +1,261 @@
+* {box-sizing: border-box;}
+
+body { background-color: #FCEBB6;
+    color: #221811;
+    background-image: url(images/fadedroad50.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+
+header { background-color: #D2B48C;
+    color: #231814;
+    background-image: url(images/coffeelogo.jpg);
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 240px;
+}
+
+header a {text-decoration: none;}
+
+header a:link {color: #231814;}
+
+header a:visited {color: #231814;}
+
+header a:hover {color: #fef6c2;}
+
+h1 { font-size: 3em;
+        font-family: 'bayon', serif; }
+
+h2 { color:#8C3826; }
+
+nav { font-weight: bold;
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        float: left;
+        width: 200px;
+} 
+
+
+nav a {text-decoration: none;}
+
+nav a:link {color: #fef6c2}
+
+nav a:visited {color: #d2b48c}
+
+nav a:hover {color: #cc9933}
+
+nav ul {
+        list-style-type: none;
+        padding-left: 0;
+}
+
+
+#wrapper {width: 80%;
+        background-color: #231814;
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 900px;
+        max-width: 1280px;
+        box-shadow: 3px 3px 3px #e4ce3c;
+        padding: 0;
+}
+
+
+
+h4 {background-color: #d2b48c;
+        font-size: 1.2em;
+        text-transform: capitalize;
+        padding-left: .5em;
+        padding-bottom: 0;
+        border-bottom: 1px solid #cc9933;
+        clear: left
+}
+
+h3 {color: #8c3826;}
+
+dt {color: #8c3826;}
+
+main {padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2em;
+        padding-top: 0;
+        margin-left: 200px;
+        background-color: #fef6c2;
+        display: block;
+        overflow: auto;
+
+}
+
+main h2, h3, h4, p, div, ul, dl{
+        padding-left: 3em;
+        padding-right: 2em;
+
+}
+
+.details {padding-left: 20%;
+        padding-right: 20%;
+        overflow: auto;
+
+}
+
+
+img {
+        border-style: none;
+        max-width: 100%;
+        height: auto;}
+
+#homehero {
+                height: 300px;
+                background-image: url(images/hero.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+        }
+#heromugs {
+        height: 300px;
+        background-image: url(images/heromugs.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+}
+
+#heroguitar {
+        height: 300px;
+        background-image: url(images/heroguitar.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+}
+
+
+/* Back To Top formatting */
+
+
+#ttop {
+  text-align: right;  
+  
+}
+
+
+footer {background-color: #d2b48c;
+        clear: both;
+        font-size: .60em;
+        font-style: italic;
+        text-align: center;
+        padding: 1em;
+        border-top: solid 2px #8c3826;
+
+}
+
+.floatleft {
+        float: left;
+        padding-right: 2em;
+        padding-bottom: 2em;
+
+}
+
+.onethird {
+        float: left;
+        width: 33%;
+
+}
+
+
+
+
+
+
+/* contact section */
+.contact_section {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.contact_section .bg-img {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact_section .bg-img img {
+  width: 100%;
+}
+
+.contact_section .heading_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_section .heading_container h2 {
+  text-transform: unset;
+}
+
+.contact_section input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contact_section input:-ms-input-placeholder {
+  color: #000;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #000;
+}
+
+.contact_section input::placeholder {
+  color: #000;
+}
+
+.contact_section input {
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid #ac9784;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.contact_section input::-webkit-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input:-ms-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input::placeholder {
+  color: #ac9784;
+}
+
+.contact_form-container {
+  padding: 15px 0 15px 0;
+}
+
+.contact_form-container button {
+  border: none;
+  background-color: #b7670c;
+  color: #fff;
+  padding: 14px 55px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.map_container {
+  height: 350px;
+}
+
+.map_container .map-responsive {
+  height: 100%;
+}
+
+/* contact section */
