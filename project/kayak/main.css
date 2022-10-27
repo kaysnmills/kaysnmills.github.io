@@ -1,8 +1,19 @@
-body { font-family: Tahoma, Verdana, Arial, sans-serif; 
+/* header {} */
+/* header h2 #slogan{
+      border: solid red;
+} */
+
+
+body { font-family: 'Nabla', cursive;
+      font-family: 'Playfair Display', serif; 
     margin: 0; padding: 0;
     }
+
+
+
+
 .hero { 
- background-image: url(images/beached.jpg); 
+ background-image: url(images/waffle4.jpg); 
  min-height: 100vh;  
  background-attachment: fixed; 
  background-position: center; 
@@ -10,8 +21,10 @@ body { font-family: Tahoma, Verdana, Arial, sans-serif;
  background-size: cover; 
  padding: 0;
 }
+
+
 .tourshero { 
- background-image: url(images/kayaks.jpg); 
+ background-image: url(images/waffle1.jpg); 
  min-height: 100vh;
  background-attachment: fixed; 
  background-position: center; 
@@ -19,16 +32,8 @@ body { font-family: Tahoma, Verdana, Arial, sans-serif;
  background-size: cover; 
 }
 .rentalshero { 
- background-image: url(images/rentals.jpg); 
+ background-image: url(images/waffle3.jpg); 
  min-height: 100vh; 
- background-attachment: fixed; 
- background-position: center; 
- background-repeat: no-repeat; 
- background-size: cover; 
-}
-.contacthero { 
- background-image: url(images/lonekayak.jpg); 
- min-height: 100vh;  
  background-attachment: fixed; 
  background-position: center; 
  background-repeat: no-repeat; 
@@ -39,6 +44,7 @@ nav { z-index:9999;
    position: fixed;
    top: 0;
    left: 0;
+   text-align: center;
    padding: .5em;
    height: 40px;
    background:rgba(25,25, 25, 0.70);
@@ -58,9 +64,10 @@ h1 { height: 100px;
   padding-top: 2em; 
   text-align: center;
   background:rgba(255, 255, 255, 0.80);
+
 }
 
-.activeNav {
+li .activeNav {
       color: orange;
 }
 
@@ -80,3 +87,177 @@ footer {   background:rgba(25,25, 25, 0.90);
       bottom: 0;}	
 footer a { text-decoration: none;  
        color: #EAEAEA; }	
+
+
+
+
+
+
+
+
+/* ----------------------------contact section ------------------------------*/
+.contact_section {
+      font-family: 'Nabla', cursive;
+      font-family: 'Playfair Display', serif; 
+    }
+    
+    .contact_section .bg-img {
+      position: absolute;
+      width: 100px;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    
+    .contact_section .bg-img img {
+      width: 100%;
+    }
+    
+    .contact_section .heading_container {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    
+    .contact_section .heading_container h2 {
+      text-transform: unset;
+    }
+    
+    .contact_section input::-webkit-input-placeholder {
+      color: #000;
+    }
+    
+    .contact_section input:-ms-input-placeholder {
+      color: #000;
+    }
+    
+    .contact_section input::-ms-input-placeholder {
+      color: #000;
+    }
+    
+    .contact_section input::placeholder {
+      color: #000;
+    }
+    
+    .contact_section input {
+      border: none;
+      outline: none;
+      border-bottom: 0.8px solid #ac9784;
+      width: 90%;
+      margin: 10px 0;
+    }
+    
+    .contact_section input::-webkit-input-placeholder {
+      color: #ac9784;
+    }
+    
+    .contact_section input:-ms-input-placeholder {
+      color: #ac9784;
+    }
+    
+    .contact_section input::-ms-input-placeholder {
+      color: #ac9784;
+    }
+    
+    .contact_section input::placeholder {
+      color: #ac9784;
+    }
+    
+    .contact_form-container {
+      padding: 15px 0 15px 0;
+    }
+    
+    .contact_form-container button {
+      border: none;
+      background-color: #fd9e2e;
+      color: #fff;
+      padding: 14px 55px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    
+    .map_container {
+      height: 350px;
+    }
+    
+    .map_container .map-responsive {
+      height: 100%;
+    }
+    
+    /* -------------------------------------end contact section------------------------------------------- */
+
+    /* -------------------------------------small layout----------------------------------------------------*/
+
+    @media (max-width: 600px) {
+      h1{
+        display:flex;
+      }
+
+      nav { 
+        text-align: left;
+        font-size: 100%;
+       
+} 
+
+
+nav a {text-decoration: none;}
+
+nav a:link {color: #fef6c2}
+
+nav a:visited {color: #d2b48c}
+
+nav a:hover {color: #cc9933}
+
+nav ul {display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 1.25em;
+      
+}
+
+nav li{
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: auto;
+        border-bottom: 1px solid #fef6c2;
+        background-color: rgba(25,25, 25, 0.90)
+}
+      
+
+
+      .hero { 
+        background-image: url(images/waffle4.jpg); 
+        min-height: 50vh;  
+        background-attachment: fixed; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        padding: 0;
+       }
+       
+       
+       .tourshero { 
+        background-image: url(images/waffle1.jpg); 
+        min-height: 50vh;
+        background-attachment: fixed; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+       }
+       .rentalshero { 
+        background-image: url(images/waffle3.jpg); 
+        min-height: 50vh; 
+        background-attachment: fixed; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+       }
+       
+
+
+      }

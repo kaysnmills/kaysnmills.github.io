@@ -1,0 +1,188 @@
+/* header {} */
+/* header h2 #slogan{
+      border: solid red;
+} */
+
+
+body { font-family: 'Nabla', cursive;
+    font-family: 'Playfair Display', serif; 
+  margin: 0; padding: 0;
+  }
+
+
+
+
+.hero { 
+background-image: url(images/waffle4.jpg); 
+min-height: 100vh;  
+background-attachment: fixed; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover; 
+padding: 0;
+}
+
+
+.tourshero { 
+background-image: url(images/waffle1.jpg); 
+min-height: 100vh;
+background-attachment: fixed; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover; 
+}
+.rentalshero { 
+background-image: url(images/waffle3.jpg); 
+min-height: 100vh; 
+background-attachment: fixed; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover; 
+}
+
+nav { z-index:9999;
+ position: sticky;
+ top: 0;
+ left: 0;
+ text-align: center;
+ padding: .5em;
+ height: 40px;
+ background:rgba(25,25, 25, 0.70);
+ width: 100%;
+ font-size: 120%;
+ font-weight: bold;
+ min-width: 900px;
+}
+nav ul { list-style-type: none; 
+    margin: 5px; }
+nav ul li { display: inline; padding-left: 2em; padding-right: 2em; }
+nav a { text-decoration:none; }
+nav a:link { color: #EAEAEA; }
+nav a:visited { color: #FFF; }
+nav a:hover { color: #FDA27F; }
+h1 { height: 100px; 
+padding-top: 2em; 
+text-align: center;
+background:rgba(255, 255, 255, 0.80);
+
+}
+
+li .activeNav {
+    color: orange;
+}
+
+.space {height: 8vh; }
+#tours, #rentals, #contact {  background-color: #FFF;
+                     width: 60%;
+                     padding-left: 6em;
+                     padding-top: 70px;
+                     padding-bottom: 2em; }
+footer {   background:rgba(25,25, 25, 0.90);
+    width: 100%;
+    font-size: 90%;
+    text-align: center;	
+    color: #EAEAEA; 
+
+    position: fixed;
+    bottom: 0;}	
+footer a { text-decoration: none;  
+     color: #EAEAEA; }	
+
+
+
+
+
+
+
+
+/* ----------------------------contact section ------------------------------*/
+.contact_section {
+    font-family: 'Nabla', cursive;
+    font-family: 'Playfair Display', serif; 
+  }
+  
+  .contact_section .bg-img {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .contact_section .bg-img img {
+    width: 100%;
+  }
+  
+  .contact_section .heading_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .contact_section .heading_container h2 {
+    text-transform: unset;
+  }
+  
+  .contact_section input::-webkit-input-placeholder {
+    color: #000;
+  }
+  
+  .contact_section input:-ms-input-placeholder {
+    color: #000;
+  }
+  
+  .contact_section input::-ms-input-placeholder {
+    color: #000;
+  }
+  
+  .contact_section input::placeholder {
+    color: #000;
+  }
+  
+  .contact_section input {
+    border: none;
+    outline: none;
+    border-bottom: 0.8px solid #ac9784;
+    width: 90%;
+    margin: 10px 0;
+  }
+  
+  .contact_section input::-webkit-input-placeholder {
+    color: #ac9784;
+  }
+  
+  .contact_section input:-ms-input-placeholder {
+    color: #ac9784;
+  }
+  
+  .contact_section input::-ms-input-placeholder {
+    color: #ac9784;
+  }
+  
+  .contact_section input::placeholder {
+    color: #ac9784;
+  }
+  
+  .contact_form-container {
+    padding: 15px 0 15px 0;
+  }
+  
+  .contact_form-container button {
+    border: none;
+    background-color: #fd9e2e;
+    color: #fff;
+    padding: 14px 55px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .map_container {
+    height: 350px;
+  }
+  
+  .map_container .map-responsive {
+    height: 100%;
+  }
+  
+  /* contact section */
