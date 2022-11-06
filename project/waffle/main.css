@@ -172,14 +172,12 @@ h1 { height: 100px;
   margin: 3%;
 }
 
-#callahead {
+.callahead {
   text-align: center;
   text-decoration: underline;
 }
 
-#callahead  {text-decoration: none;}
 
-#contactnumber {display: hidden;}
 
 .siteSearch {
   float: right;
