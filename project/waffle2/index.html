@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Interface/User Experience Web Design</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.usu.edu/favicon.ico" type="image/x-icon">
 </head>
 
@@ -32,8 +34,8 @@
 
             <li>
                 <form id="form" role="search" method="get" action="https://www.google.com/search">
-                    <input type="hidden" name="sitesearch" value="https://pamdupinbryant.github.io/">
-                    <input type="search" id="query" placeholder="Search Pam's Site" size=15 aria-label="Search">
+                    <input type="hidden" name="sitesearch" value="https://kaysnmills.github.io/">
+                    <input type="search" id="query" placeholder="Search This Site" size=15 aria-label="Search">
                     <button>Search</button>
                 </form>
             </li>
@@ -44,36 +46,62 @@
     </nav>
 
     <main id="mainContent">
-        <h2>Practice Files</h2>
-        <p>We will use this site to practice tables, forms, and to insert some new features.</p>
-        <h3><a href="https://developers.google.com/search/docs/beginner/get-started">Google - Beginner SEO</a></h3>
-        <h3><a href="https://developers.google.com/search/docs/advanced/guidelines/get-started">Google - Advanced
-                SEO</a></h3>
-        <h3><a href="https://search.google.com/search-console/welcome">Google Search
-                Console</a></h3>
-        <h3><a href="https://programmablesearchengine.google.com/about/">Google Programmable Search</a></h3>
+       
+        <!-- Home Page -->
+    <section id="home" class="hero">
+    <div  class="space"> </div>
+    <h1><img src="images/Awe-full2.png" alt="Waffle Logo"></h1>
+    
+    </section>
+    
+    
+    <!-- Waffle of the week -->
+    <section id="tours"> 
+    <h2 class="bkgrndcolor">It&#39;s Waffle Time </h2>
+    <h3>Featured Waffle This Month: <span style="color:tan; border-bottom: 1px solid rgb(165, 58, 58);
+      padding-bottom: 3px;">Dulce De Leche</span></h3>
+    <ul>
+      <li>Cinnamon</li>
+      <li>Sugar</li>
+      <li>Fried Ice Cream</li>
+      <li>Dulce de Leche Caramel</li>
+    </ul>
+    </section> 
+    <div class="tourshero"></div>
+    
+    <!-- Call ahead -->
+    <section id="rentals"> 
+    <h2 class="bkgrndcolor">Call Ahead and Skip the Line</h2>
+    
+    <h3>Start Your Order</h3> 
+    <a href="menu.html">
+      <button type="button">Menu</button>
+    </a>
+    
+    </section>
+    <div class="rentalshero"></div>
+    
+    <!-- Contact Page -->
+    <section id="contact"> 
+    <h2 class="bkgrndcolor">Want To Book a Truck For Your Next Event?</h2>
+    <h3>Contact Awe-full Waffles</h3>
+    <p class="pindent">Give us a call or send us an email and we will answer all your questions about pricing and catering options!</p>
+    <a href="contact.html">
+        <button type="button">Contact Us!</button>
+      </a>
+    <p>&#40;801&#41;&#8211;920&#8211;8089<br></p>
+    <p><a href="mailto:kaysnmills78@gmail.com">info@Awe-fullWaffles.com</a></p>
+    <br>
+    
+
+
+
+
+
+
+
     </main>
 
-    <div id="siteSearch">
-        <h3>Find out more</h3>
-        <!-- SiteSearch Google -->
-        <form role="search" method="get" action="https://www.google.com/search">
-            <div id="search">
-                <label for="q">Search:</label>
-                <input id="q" name="q" size="20" maxlength="255" value="" type="text" placeholder="Search...">
-                <input name="domains" value="https://pamdupinbryant.github.io/" type="hidden">
-                <input type="image" src="search.png" alt="Search">
-                <br>
-                <input name="sitesearch" value="" id="www" type="radio" checked="checked">
-                <label for="www">The Web</label>
-                <br>
-                <input name="sitesearch" value="https://pamdupinbryant.github.io/" id="mysite" type="radio">
-                <label for="mysite">This Site</label>
-                <br>
-                <input name="btnG" value="Search" type="submit">
-            </div>
-        </form>
-    </div>
 
     <!-- <footer id="pageFooter">
         <ul>

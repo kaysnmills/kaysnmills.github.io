@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Awe-full Menu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&family=Playfair+Display&display=swap" rel="stylesheet">
+</head> 
+
+<body> 
+<nav class="top">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li class="activeNav"><a href="#top">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home Page -->
+<section id="home" class="hero">
+<div  class="space"> </div> 
+<h1 id="menutitle">Contact Us</h1> 
+</section>
+
+
+<main id="mainContent" >
+    <h2 class="bkgrndcolor">Contact Information</h2>
+
+
+   <a href="mailto:A02337200@usu.edu">info@Awe-fullWaffles.com</a>
+   <br>
+    <a href="tel:8019208089">(801)-920-8089</a>
+
+
+
+<div class="cards">
+<article class="card">
+    <h2 style="font-size: 2.5em; text-decoration:;">Catering</h2>
+    <form name="PracticeForm" method="post" action="mailto:A02337200@usu.edu" enctype="text/plain">
+        <fieldset>
+            <legend class="bkgrndcolor">Event Information</legend>
+            <p>
+                <label for="yourname">Name:</label>
+                <input type="text" name="yourname" id="yourname" tabindex="1" required>
+            </p>
+
+            <!-- HTML 5 Form Elements -->
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="date">Date of Event:</label>
+                <input type="date" name="date" id="date" required>
+            </p>
+
+            <p>
+                <label for="guests">Estimated Number of Guests:</label>
+                <input type="number" name="guests" id="guests" required>
+            </p>
+
+    
+            <p><label for="feedback">Additional Info</label></p>
+            <p class="additionalinfo">(Feel free to include any budget restrictions, catering preferences, questions, etc!)</p>
+            <p><textarea name="feedback" rows="10" cols="40" id="feedback" tabindex="6"></textarea></p>
+
+            <p><input type="submit" tabindex="7"></p>
+         
+
+            
+
+            <!-- <button type="submit" tabindex="10">
+                <img src="mail.png" alt="mail"><br>
+                Email Submission<br>
+                Proceed with Caution!
+            </button> -->
+
+        </fieldset>
+    </form>
+</article>
+
+
+<article class="card">
+    <h2 style="font-size: 2.5em; text-decoration:;">Truck Location</h2>
+    <div class="col-md-6">
+        <div class="map_container">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Utah+State+University+Logan+Utah" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+</div>
+</main>
+
+
+
+<footer>
+    Awe-fullWaffles.com<br>
+    <a href="mailto:A02337200@usu.edu">info@Awe-fullWaffles.com</a>
+</footer>
+</body> 
+</html> 

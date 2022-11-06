@@ -1,13 +1,14 @@
 body {
 	display: grid;
 	grid-template-areas:
-		"header header header"
-		"nav main search"
+		"header nav nav"
+		"main main search"
 		"footer footer footer";
 	grid-template-rows: 100px 1fr 60px;
-	grid-template-columns: 15% 1fr 20%;
+	grid-template-columns: 25% 1fr 20%;
 	height: 100vh;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Nabla', cursive;
+    font-family: 'Playfair Display', serif;
 	/* width: 80%; */
 	margin: 0 auto;
 }
@@ -17,8 +18,110 @@ header, footer, main, div {
 }
 
 nav {
-	padding: 10px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: 15px;
 }
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	padding-right: 15px;
+}
+
+footer li {
+	font-size: 75%;
+}
+#tours, #rentals, #contact {  background-color: #FFF;
+                       
+	padding-left: 6em;
+	padding-top: 70px;
+	padding-bottom: 2em; }
+
+	.hero h1 {
+		height: fit-content;
+		padding-top: 1%;
+		padding-bottom: 0.5%;
+	  }
+	  
+	  
+/* 	  button{
+		
+		padding: .75% .75%;
+		border: none;
+		border-radius: .5em;
+		background-color:rgb(165, 58, 58);
+		color: black;
+		font-size: 25px;
+		cursor: pointer;
+	  
+	  } */
+
+	  .box {
+		color: white;
+		background-color: rgb(65, 60, 60);
+		padding-bottom: 2.5%;
+		padding-top: 2.2%;
+		border-radius: .3em;
+		width: 20%;
+		
+	  }
+	  
+	  .bkgrndcolor{
+		font-size: 2em;
+		border-radius: .3em;
+		padding: 0em 1em;
+		background-color: rgb(170, 132, 81);
+		border-bottom: black;
+		color: white;
+		width: 80%;
+	  
+	  }
+	  
+	  .hero { 
+	   background-image: url(images/waffle4.jpg); 
+	   min-height: 55vh;  
+	   background-attachment: fixed; 
+	   background-position: center; 
+	   background-repeat: no-repeat; 
+	   background-size: cover; 
+	   padding: 0;
+	  }
+	  
+	  
+	  .tourshero { 
+	   background-image: url(images/waffle1.jpg); 
+	   min-height: 50vh;
+	   background-attachment: fixed; 
+	   background-position: center; 
+	   background-repeat: no-repeat; 
+	   background-size: cover; 
+	  }
+	  
+	  .rentalshero { 
+	   background-image: url(images/waffle3.jpg); 
+	   min-height: 50vh; 
+	   background-attachment: fixed; 
+	   background-position: center; 
+	   background-repeat: no-repeat; 
+	   background-size: cover; 
+	  }
+
+	  h1 { height: 100px; 
+		padding-top: 2em; 
+		text-align: center;
+		background:rgba(255, 255, 255, 0.80);
+	  
+	  }
+	  
 
 /* Styles for the table schedule */
 
@@ -266,4 +369,17 @@ footer li a {
 	}
 }
 
+
+@media (max-width: 600px) {
+	body {
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"main main"
+			"footer footer";
+		grid-template-rows: 100px auto 1fr 60px;
+		grid-template-columns: 15% 1fr;
+		width: 100%;
+	}
+}
 /* end */

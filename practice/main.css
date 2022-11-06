@@ -59,7 +59,7 @@ table.schedule caption {
 
 /* Styles for the table plan */
 
-/* table.plan {
+ table.plan {
 	border-collapse: collapse;
 	border: 4px solid #036;
 	}
@@ -97,8 +97,7 @@ table.plan td	{
 	color: #036;
 	padding: 10px;
 	font-size: 150%;
-	}	 */
-
+	}	 
 /* Styles for the table time */
 
 /*table.time {
