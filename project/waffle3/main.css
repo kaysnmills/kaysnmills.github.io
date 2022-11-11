@@ -1,0 +1,597 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: auto;
+  font-family: 'Nabla', cursive;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*     #wrapper {
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    } */
+
+.top {
+  overflow: hidden;
+}
+
+.top a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* border: blue solid; */
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+li {
+  text-align: center;
+}
+
+.pindent {
+  text-align: center;
+}
+
+.p2indent {
+  text-align: center;
+}
+
+#menutitle {
+  font-size: 2.5em;
+
+}
+
+.contactlist {
+  list-style-type: none;
+}
+
+
+
+.bkgrndcolor {
+  font-size: 2em;
+  border-radius: .3em;
+  padding: 0em 1em;
+  background-color: rgb(170, 132, 81);
+  border-bottom: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+
+}
+
+#bkgrndsmall {
+  font-size: 2em;
+  border-radius: .3em;
+  padding: 0em 1em;
+  background-color: rgb(170, 132, 81);
+  border-bottom: black;
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+.hero {
+  background-image: url(images/waffle4.jpg);
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+
+.tourshero {
+  background-image: url(images/waffle1.jpg);
+  min-height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rentalshero {
+  background-image: url(images/waffle3.jpg);
+  min-height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+nav {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* text-align: center; */
+  padding: .5em;
+  height: fit-content;
+  background: rgba(25, 25, 25, 0.70);
+  width: 100%;
+  font-size: 120%;
+  font-weight: bold;
+  /* border: yellow solid; */
+}
+
+.activeNav {
+  float: left;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+  width: fit-content;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 5px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #EAEAEA;
+}
+
+nav a:visited {
+  color: #FFF;
+}
+
+nav a:hover {
+  color: #FDA27F;
+}
+
+h1 {
+  height: 100px;
+  padding-top: 2em;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.80);
+
+}
+
+.hero h1 {
+  margin-left: 3%;
+  margin-right: 3%;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}
+
+
+.redbutton {
+  text-align: center;
+  padding: .75% .75%;
+  border: none;
+  border-radius: .5em;
+  background-color: rgb(165, 58, 58);
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+
+
+}
+
+.centerbutton {
+  text-align: center;
+}
+
+.additionalinfo {
+  font-size: x-small;
+  color: grey;
+
+}
+
+.space {
+  height: 8vh;
+}
+
+#tours,
+#rentals,
+#contact {
+  width: 100%;
+  background-color: #FFF;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 70px;
+  padding-bottom: 2em;
+}
+
+
+#mainContent {
+  text-align: center;
+  margin: 3%;
+}
+
+.callahead {
+  text-align: center;
+
+}
+
+/* #gsce {
+  border: solid red;
+  
+} */
+
+.siteSearch {
+  float: right;
+  /* text-align: right; */
+  /* border: red solid; */
+  padding: 14px 16px;
+}
+
+/* #gsce {
+  
+  width: 40%;
+  text-align: right;
+} */
+
+/* .col-md-6 {margin: 3%;} */
+
+footer {
+  background: rgba(25, 25, 25, 0.90);
+  width: 100%;
+  font-size: 90%;
+  text-align: center;
+  color: #EAEAEA;
+  /* border: solid red; */
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #EAEAEA;
+}
+
+
+
+/* -------------------------- Contact Section ----------------*/
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  width: 100%;
+  margin: 3%;
+}
+
+/* ----------------------------contact section ------------------------------*/
+.contact_section {
+  font-family: 'Nabla', cursive;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact_section .bg-img {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contact_section .bg-img img {
+  width: 100%;
+}
+
+.contact_section .heading_container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact_section .heading_container h2 {
+  text-transform: unset;
+}
+
+.contact_section input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contact_section input:-ms-input-placeholder {
+  color: #000;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #000;
+}
+
+.contact_section input::placeholder {
+  color: #000;
+}
+
+.contact_section input {
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid #ac9784;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.contact_section input::-webkit-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input:-ms-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #ac9784;
+}
+
+.contact_section input::placeholder {
+  color: #ac9784;
+}
+
+.contact_form-container {
+  padding: 15px 0 15px 0;
+}
+
+.contact_form-container button {
+  border: none;
+  background-color: #fd9e2e;
+  color: #fff;
+  padding: 14px 55px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.map_container {
+  height: 350px;
+}
+
+.map_container .map-responsive {
+  height: 100%;
+}
+
+/* -------------------------------------end contact section------------------------------------------- */
+
+
+
+/* -------------------------------------Medium layout----------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+  nav {
+    width: 100%;
+    height: fit-content;
+
+  }
+
+
+  h3 {
+    font-size: 1em;
+    text-indent: 0%;
+  }
+
+  ul {
+    text-indent: 0%;
+  }
+
+  li {
+    font-size: .75em;
+    text-indent: 0%;
+  }
+
+  .pindent {
+    text-indent: 0%;
+  }
+
+  .p2indent {
+    text-indent: 0%;
+  }
+
+  #menutitle {
+    font-size: 2.5em;
+
+  }
+
+  .box {
+    color: black;
+    background-color: white;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    border-radius: .3em;
+  }
+
+  .bkgrndcolor {
+    font-size: 1.5em;
+    border-radius: .3em;
+    padding: 0em 1em;
+    background-color: rgb(170, 132, 81);
+    color: white;
+
+  }
+
+  .hero {
+    background-image: url(images/waffle4.jpg);
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+
+  .tourshero {
+    background-image: url(images/waffle1.jpg);
+    min-height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rentalshero {
+    background-image: url(images/waffle3.jpg);
+    min-height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .redbutton {
+    margin-left: 0%;
+    padding: 2% 2%;
+    border: none;
+    border-radius: .5em;
+    background-color: rgb(165, 58, 58);
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+/* -------------------------------------small layout----------------------------------------------------*/
+
+@media (max-width: 635px) {
+
+
+
+  nav {
+    font-size: medium;
+  }
+
+
+  #menutitle {
+    font-size: 2.5em;
+
+  }
+
+  .box {
+    color: black;
+    background-color: white;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    border-radius: .3em;
+  }
+
+  .bkgrndcolor {
+    font-size: 1em;
+    border-radius: .3em;
+    padding: 0em 1em;
+    background-color: rgb(170, 132, 81);
+    color: white;
+    width: 100%;
+    margin-left: 0%;
+
+  }
+
+  .hero {
+    background-image: url(images/waffle4.jpg);
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+
+  .tourshero {
+    background-image: none;
+    min-height: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rentalshero {
+    background-image: none;
+    min-height: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .redbutton {
+    margin: 0%;
+    padding: 2% 2%;
+    border: none;
+    border-radius: .5em;
+    background-color: rgb(165, 58, 58);
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+
+  #contactnumber {
+    visibility: visible;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card {
+    width: 100%;
+    margin: 3%;
+  }
+
+
+  #tours,
+  #rentals,
+  #contact {
+    width: 100%;
+    background-color: #FFF;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .hero h1 {
+    margin-top: 15%;
+  }
+
+
+
+
+}

@@ -11,12 +11,12 @@ body {
     
     }
 
-    #wrapper {
+/*     #wrapper {
       background-color: white;
       margin-left: auto;
       margin-right: auto;
-      width: 80%;
-    }
+      width: 90%;
+    } */
     
 
 h3 {
@@ -198,9 +198,9 @@ h1 { height: 100px;
 } */
 
 .siteSearch {
-  width: fit-content;
-  float: right;
-  border: solid red;
+  text-align: right;
+  border: red solid;
+  
 }
 
 /* #gsce {
@@ -216,7 +216,7 @@ footer {   background:rgba(25,25, 25, 0.90);
       font-size: 90%;
       text-align: center;	
       color: #EAEAEA; 
-
+      border: solid red;
       position: fixed;
       bottom: 0;
       }	
