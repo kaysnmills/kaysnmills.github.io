@@ -270,6 +270,20 @@ footer a {
   color: #EAEAEA;
 }
 
+.hamburger {
+	display: none;
+}
+
+#myNav {
+	display: none;
+}
+
+.srchicon {
+  display: none;
+}
+
+
+
 
 
 /* -------------------------- Contact Section ----------------*/
@@ -290,81 +304,6 @@ footer a {
   font-family: 'Playfair Display', serif;
 }
 
-.contact_section .bg-img {
-  position: absolute;
-  width: 100px;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.contact_section .bg-img img {
-  width: 100%;
-}
-
-.contact_section .heading_container {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.contact_section .heading_container h2 {
-  text-transform: unset;
-}
-
-.contact_section input::-webkit-input-placeholder {
-  color: #000;
-}
-
-.contact_section input:-ms-input-placeholder {
-  color: #000;
-}
-
-.contact_section input::-ms-input-placeholder {
-  color: #000;
-}
-
-.contact_section input::placeholder {
-  color: #000;
-}
-
-.contact_section input {
-  border: none;
-  outline: none;
-  border-bottom: 0.8px solid #ac9784;
-  width: 90%;
-  margin: 10px 0;
-}
-
-.contact_section input::-webkit-input-placeholder {
-  color: #ac9784;
-}
-
-.contact_section input:-ms-input-placeholder {
-  color: #ac9784;
-}
-
-.contact_section input::-ms-input-placeholder {
-  color: #ac9784;
-}
-
-.contact_section input::placeholder {
-  color: #ac9784;
-}
-
-.contact_form-container {
-  padding: 15px 0 15px 0;
-}
-
-.contact_form-container button {
-  border: none;
-  background-color: #fd9e2e;
-  color: #fff;
-  padding: 14px 55px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
 
 .map_container {
   height: 350px;
@@ -382,10 +321,43 @@ footer a {
 
 @media (max-width: 768px) {
 
-  nav {
-    width: 100%;
-    height: fit-content;
 
+  body {
+		grid-template-areas:
+			"nav nav"
+			"main main"
+			"footer footer";
+		grid-template-rows: 100px 60px 1fr 60px;
+		grid-template-columns: 15% 1fr;
+		width: 100%;
+	}
+
+  .siteSearch {
+		display: none;
+	}
+
+
+  #bkgrndsmall {
+    font-size: 1.25em;
+
+  }
+
+
+  
+  .top a {
+    float: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* border: blue solid; */
+  }
+
+  .activeNav {
+    float: none;
+    border-bottom: .5px solid white;
+    padding-bottom: 2px;
+    width: 100%;
+  
   }
 
 
@@ -475,6 +447,10 @@ footer a {
   }
 
 
+  .srchicon {
+    display:inline;
+  }
+
 
 
 }
@@ -486,14 +462,81 @@ footer a {
 
 /* -------------------------------------small layout----------------------------------------------------*/
 
-@media (max-width: 635px) {
+@media (max-width: 640px) {
 
-
-
+  .hamburger {
+		display: inline;
+	}
+  
   nav {
-    font-size: medium;
+    background: rgba(255, 255, 255, 0.80);
   }
 
+	nav ul li {
+		display: none;
+	}
+
+	/* The Overlay (background) */
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */
+		height: 100%;
+		width: 0;
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		left: 0;
+		top: 0;
+		background-color: rgb(0, 0, 0);
+		/* Black fallback color */
+		background-color: rgba(0, 0, 0, 0.9);
+		/* Black w/opacity */
+		overflow-x: hidden;
+		/* Disable horizontal scroll */
+		transition: 0.5s;
+		/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		/* 25% from the top */
+		width: 75%;
+		/* 75% width */
+		text-align: Left;
+		/* Left Align text/links */
+		margin-top: 30px;
+		/* 30px top margin to avoid conflict with the close button on smaller screens */
+	}
+
+	/* The navigation links inside the overlay */
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 100%;
+		color: #818181;
+		display: block;
+		/* Display block instead of inline */
+		transition: 0.3s;
+		/* Transition effects on hover (color) */
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #f1f1f1;
+	}
+
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+  
+ 
 
   #menutitle {
     font-size: 2.5em;
@@ -589,6 +632,11 @@ footer a {
 
   .hero h1 {
     margin-top: 15%;
+  }
+
+
+  .srchicon {
+    display: none;
   }
 
 
