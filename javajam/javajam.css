@@ -47,23 +47,36 @@ nav a:visited {color: #d2b48c}
 
 nav a:hover {color: #cc9933}
 
-nav ul {display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+nav ul {  /* display: flex;
+
+        flex-direction: column; */
+    
         font-size: 1.25em;
-      
+    
+        list-style-type: none;
+    
+        margin: 0;
+    
+        padding: 0;
 }
 
 nav li{
-        padding-top: .5em;
-        padding-bottom: .5em;
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 100%;
-        border-bottom: 1px solid #fef6c2;
+        border-bottom: 1px solid #FEF6C2;
+
+        /* padding: .5em 1em;
+    
+        width: 100%; */
 }
+
+nav li a {
+
+        display: flex;
+    
+        flex-direction: column;
+    
+        padding: .5em 1em;
+    
+    }
 
 
 #wrapper {
@@ -176,6 +189,35 @@ form { display: flex;
         width: 80%; }
 
 input, textarea { margin-bottom: .5em; }
+
+.item {
+        background-color: #faf9f7;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+}
+
+.item img {
+        float: right;
+}
+
+#herocouch {
+        height: 300px;
+        background-image: url(images/herocouch.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+
+.current {
+        text-decoration-line: underline; 
+	text-decoration-style: wavy; 
+        text-decoration-color: white;
+        text-transform: lowercase;
+
+}
+
+
 
 /* Medium Layout*/
 
