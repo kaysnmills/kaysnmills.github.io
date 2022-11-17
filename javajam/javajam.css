@@ -211,9 +211,9 @@ input, textarea { margin-bottom: .5em; }
 
 .current {
         text-decoration-line: underline; 
-	text-decoration-style: wavy; 
+	text-decoration-style: wavy;
         text-decoration-color: white;
-        text-transform: lowercase;
+        /* text-transform: lowercase; */
 
 }
 
